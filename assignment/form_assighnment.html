@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Assignment</title>
+</head>
+<body>
+	<h1> Form Assignment</h1>
+
+	<form action="mailto:class@yahoo.com" method="post"  >
+		<br>
+
+			<label>Username : * </label>
+				<input type="email" name="email" required="true" placeholder="please enter your email" >
+
+					<br>
+						<br>
+
+			<label>Password : * </label>
+				<input type="Password" name="password" required="true" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]).{8,}" title="Password must contain atleast one number, one lowercase, one upper case and minimuin of 8 characters " placeholder="please enter your password">
+
+			<!-- pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]).{8,}" attribute is used to validate the password to observe "Password must contain atleast one number, one lowercase, one upper case and minimuin of 8 characters " -->
+
+						<br>
+							<br>
+
+
+			<input type="button" name="submit" value="SUBMIT">
+
+
+
+	</form>
+
+
+</body>
+</html>
