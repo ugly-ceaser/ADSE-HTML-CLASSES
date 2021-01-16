@@ -1,0 +1,22 @@
+*{box-sizing: border-box}
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.priceactions{
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+.pagetop{
+    display: grid;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+
+}
