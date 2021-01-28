@@ -1,22 +1,514 @@
-*{box-sizing: border-box}
+{box-sizing: border-box}
 
+button:focus {
+    border: none;
+    outline: none;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
 body{
     margin: 0px;
     padding: 0px;
+    background-color: black;
+    font-family: 'poppins' , sans-serif;
+    color: darkslategray;
 
 }
 
 .priceactions{
+    display: flex;
     width: 100%;
     height: 25px;
     background-color: black;
     margin-bottom: 15px;
+    position: fixed;
 }
 
 .pagetop{
-    display: grid;
+    display: flex;
     width: 100%;
     height: 100px;
-    background-color: black;
+    /*background-color: black;*/
+
+}
+.logo{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background:url("img/logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+
+}
+.navbar{
+    display: flex;
+
+    width: 1100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    /*background-color: ;*/
+}
+.navbar a {
+    text-decoration: none;
+    padding: 25px 25px;
+    color: whitesmoke;
+
+}
+.translator{
+    display:flex;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.home{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column ;
+
+}
+.hometext{
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: 50px;
+}
+.OPENACCOUNT{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background-color: cyan;
+    color: black;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    transition: 3s ease-in-out;
+    transform: scale(0.9);
+}
+.OPENACCOUNT:Hover{
+    transform: scale(0.98);
+}
+.us{
+    display:flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+.aboutus{
+    display:flex;
+    width: 100%;
+    height: 500px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:1px ;
+}
+.aboutus div h1{
+    text-align: center;
+}
+.aboutus > div{
+    display: flex;
+    width: 32.3%;
+    height: 650px;
+   /* background-color: cyan;*/
+    margin-left: 1%;
+    margin-right: 1%;
+    transition: 3s ease-in-out ;
+    transform: scale(0.9);
+    border-radius: 35px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+.aboutus > div:hover{
+    transform: scale(0.98);
+}
+.value{
+    display:none;
+    width: 100%;
+    height: 700px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.value > div{
+    display: flex;
+    width: 49%;
+    height: 650px;
+    background-color: navajowhite;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 35px;
+
+}
+
+.bonus{
+    display:flex;
+    width: 100%;
+    height: 500px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.bonus > div{
+    display: flex;
+    width: 48%;
+    height: 400px;
+    /*background-color: cyan;*/
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-direction: column;
+    border-radius: 35px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: center;
+    font-weight: bolder;
+    color: cyan;
+
+}
+.bonustext{
+    width: 45%;
+    margin-left: 100px;
+
+}
+.bonusside > div {
+    display: flex;
+    width: 98%;
+    height: 32%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: yellow;
+    border-radius: 35px;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    color: darkslategray;
+
+
+}
+
+.siteinfo{
+    display:flex;
+    width: 100%;
+    height: 220px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.siteinfo > div{
+    display: flex;
+    width: 23%;
+    height: 200px;
+    background-color: cyan;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 35px;
+
+}
+
+.packages{
+    display:flex;
+    width: 100%;
+    height: 500px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.packages > div{
+    display: flex;
+    width: 23%;
+    height: 550px;
+    background-color: cyan;
+    margin-left: 1%;
+    margin-right: 1%;
+    transition: 3s ease-in-out ;
+    transform: scale(0.9);
+    border-radius: 35px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: bolder;
+
+}
+
+.packages > div > button{
+    display: none;
+    width: 96%;
+    height: 45px;
+    background-color: greenyellow;
+    bottom: 5px;
+    margin-right: 2%;
+    margin-left: 2%;
+    position: absolute;
+    opacity: 1;
+    border-radius: 40px;
+    border: none;
+    transition: all 1s ease-in;
+}
+.packages > div:hover{
+    margin-top: 10px;
+    transform: scale(0.98);
+
+}
+.packages > div:hover button{
+    display: block;
+    transition: all 10s ease-in;
+}
+
+.feedback{
+    display: grid;
+    width: 100%;
+    height: 500px;
+    padding: 5px;
+    grid-template-columns: auto auto;
+}
+.feedback > div {
+    display: grid;
+    background-color: darkkhaki;
+    margin: 5px;
+    border-radius: 35px;
+}
+.shortcuts{
+    display: grid;
+    width: 100%;
+    height: 500px;
+    padding: 5px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.shortcuts > div {
+    display: grid;
+    background-color: lightskyblue;
+    margin: 5px;
+    border-radius: 35px;
+}
+
+.formdiv{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.left{
+    display: flex;
+    width: 40%;
+    height: 400px;
+    background-color: greenyellow;
+    margin: 10px;
+    border-radius: 35px;
+}
+.right {
+    display: flex;
+    width: 60%;
+    height: 300px;
+    background-color: greenyellow;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+.formcent{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.formclass{
+    display: flex;
+    width: 50%;
+    height: 90%;
+    padding: 1%;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+
+
+}
+.formclass a {
+    color: whitesmoke;
+}
+
+
+.formclass input{
+    border-radius: 35px;
+    width: 200px;
+    height: 30px;
+    float: right;
+    left: 50px;
+}
+.formclass button{
+    float: right;
+    width: 70px;
+    height: 20px;
+    border-radius: 17px;
+
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 30px;
+    background-color: indigo;
+}
+
+marquee{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.flexing{
+    display: flex;
+    margin: 0 10px;
+}
+
+.flexing img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.flexing .name{
+    display: flex;
+    color: #f5f5f5;
+}
+.flexing .name h2{
+    font-family: "Segoe UI", sans-serif;
+    color: #f5f5f5;
+}
+
+@media only screen and (max-width:900px) {
+    *{
+        font-weight: lighter;
+        font-size: 10px;
+    }
+
+
+    .translator{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .pagetop{
+
+
+
+        width: 100%;
+        height: 50px;
+    }
+    .navbar{
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navbar a{
+        padding: 6px 6px;
+        color: whitesmoke;
+        font-size: 8px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    .aboutus{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 606px;
+
+    }
+    .aboutus > div{
+        width: 100%;
+        height: 200px;
+        margin: 2px;
+        justify-content: center;
+        align-items: center;
+        font-weight: lighter;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .siteinfo{
+        display:flex;
+        width: 100%;
+        height: 105px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .siteinfo > div{
+        display: flex;
+        width: 23%;
+        height: 100px;
+        background-color: cyan;
+        margin-left: 1%;
+        margin-right: 1%;
+
+    }
+
+    .packages{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 1206px;
+
+    }
+    .packages > div{
+        width: 100%;
+        background-color: yellow;
+        height: 350px;
+        margin: 2px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .shortcuts{
+        display: none;
+    }
+
+    .feedback{
+        display: none;
+    }
+
+    .footer{
+        display: flex;
+
+    }
 
 }
