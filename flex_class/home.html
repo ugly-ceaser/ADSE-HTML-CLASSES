@@ -232,10 +232,45 @@
 
 </div>
 <div class="shortcuts">
-    <div class="location"></div>
-    <div class="quicklinks"></div>
-    <div class="riskdisco"></div>
-    <div class="contactus"></div>
+    <div class="location spn ">
+        <h1><a href="#">LOCATIONS</a></h1>
+
+        Zoom Trade is the prefered choice for investments.
+        Our order matching engine located in the 43 Ruskin Rowe, Avalon Beach NSW 2107,Australia.
+
+    </div>
+    <div class="quicklinks">
+        <span >
+        <h1><a href="#">QUICKLINKS</a></h1>
+
+            <h3><a href="#home"> HOME</a></h3>
+            <h3><a href="form.html"> LOGIN</a></h3>
+            <h3><a href="#contact"> CONTACT US</a></h3>
+            <h3><a href="#pack"> PACKAGES</a></h3>
+            <h3><a href="reg.html"> INVEST NOW</a></h3>
+        </span>
+    </div>
+    <div class="riskdisco">
+        <span class="spn">
+            <h1><a href="#">RISK DISCLOSURE</a></h1>
+
+            Zoom Trade recommends that all investors should know that Zoom Trade do not
+            bear any responsiblity for funds transfered to address provided by the user.
+        </span>
+    </div>
+    <div class="contactus">
+
+            <h1><a href="#">CONTACTS</a></h1>
+
+       <h3>    Phone :  0974979  </h3>
+
+        <h3>   E-mail :
+                zoomtrade@zoom.com   </h3>
+
+        <h3>   Website :
+                ZoomTrade.com  </h3>
+
+    </div>
 </div>
 <div class="sm2"></div>
 <footer class="footer"></footer>
@@ -267,29 +302,30 @@
     // const key = "3f872790-c642-418c-9b50-4e0b7e68cdb6";// from coinmarketcap
   //  let container = []
 ///////////////////////////////////////////////////////////////////////////////////////////////
-   window.addEventListener("load", ()=>{
-       fetch(`https://api.nomics.com/v1/currencies/ticker?key=${key}`)
-           .then(response => response.json())
-            .then(data =>{
-                console.log(data)
-                for(let i = 0; i <= 7; i++){
-                    container.push(data[i])
-                }
 
-                container.forEach(item =>{
-                   const div = document.createElement('div');
-                   div.className = "flexing";
-                   div.innerHTML = `<img src='${item['logo_url']}' style="width: 20px; height: 20px;">
-                                    <div class="name">
-                                        <h2>${item["name"]} (${item["id"]}})</h2>
-                                        <div class="span">
-                                            <small>$${item["price"]}</small>
-                                        </div>
-                                    </div>`;
-                   display.append(div);
-                });
+   // window.addEventListener("load", ()=>{
+   //     fetch(`https://api.nomics.com/v1/currencies/ticker?key=${key}`)}
+   //         .then(response => response.json())
+   //          .then(data =>{
+   //              console.log(data)
+   //              //for(let i = 0; i <= 7; i++){
+   //                 // container.push(data[i])
+   //             }
 
-            })
+                // container.forEach(item =>{
+                //    const div = document.createElement('div');
+                //    div.className = "flexing";
+                //    div.innerHTML = `<img src='${item['logo_url']}' style="width: 20px; height: 20px;">
+                //                     <div class="name">
+                //                         <h2>${item["name"]} (${item["id"]}})</h2>
+                //                         <div class="span">
+                //                             <small>$${item["price"]}</small>
+                //                         </div>
+                //                     </div>`;
+                //    display.append(div);
+                // });
+
+           // })
 
 //////////////////////////////////////////////////////////////////////////////////////////////
         // const requestOptions = {
@@ -315,7 +351,7 @@
         // });
 
 
- })
+ //})
 </script>
 </body>
 </html>

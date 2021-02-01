@@ -37,9 +37,10 @@ body{
 
 }
 .logo{
-    display: flex;
+    position: relative;
+
     width: 300px;
-    height: 100px;
+    height: 130px;
     background:url("img/logo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,6 +73,7 @@ body{
     display: flex;
     width: 100%;
     height: 700px;
+    top:30px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -295,18 +297,49 @@ body{
     border-radius: 35px;
 }
 .shortcuts{
-    display: grid;
+    display: flex;
     width: 100%;
     height: 500px;
     padding: 5px;
-    grid-template-columns: auto auto auto auto;
+    /*grid-template-columns: auto auto auto auto;*/
+}
+
+.shortcuts a{
+    color: darkslategray;
+    text-decoration: none;
 }
 
 .shortcuts > div {
-    display: grid;
+    display: flex;
+    width: 25%;
     background-color: lightskyblue;
     margin: 5px;
     border-radius: 35px;
+    padding: 10px;
+    font-weight: lighter;
+
+    flex-direction: column;
+}
+
+.shortcuts > div > span{
+    align-items: flex-start;
+    justify-content: left;
+    font-weight: lighter;
+    text-align: justify;
+
+
+}
+.spn{
+
+    letter-spacing: 3px;
+    line-height: 45px;
+}
+
+.shortcuts > div > span > h3{
+    padding-top: 20px;
+}
+.contactus{
+    flex-direction: column;
 }
 
 .formdiv{
@@ -329,11 +362,14 @@ body{
     display: flex;
     width: 60%;
     height: 300px;
-    background-color: greenyellow;
+    background-color: cyan;
     justify-content: center;
     align-items: center;
     border-radius: 35px;
 }
+
+/*login form*/
+
 .formcent{
     display: flex;
     width: 100%;
@@ -349,28 +385,115 @@ body{
     flex-direction: column;
     justify-content: center;
     font-weight: bold;
-
-
+    margin-left: 1%;
+    margin-right: 1%;
+    /*background-color: antiquewhite;*/
 }
+
+
+
 .formclass a {
     color: whitesmoke;
 }
 
 
+
+.formclass label {
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
 .formclass input{
+
+    margin: 10px;
+    padding: 5px;
+    width: 40%;
+    height: 15px;
+    border-radius: 35px;
+    border: black solid 1px;
+    align-items: center;
+
+   /* margin-top: 10px;
+    width: 200px;
+    float: right;
     border-radius: 35px;
     width: 200px;
     height: 30px;
-    float: right;
-    left: 50px;
+    float: right;*/
+
 }
+
+
 .formclass button{
     float: right;
     width: 70px;
     height: 20px;
     border-radius: 17px;
+    border: black solid 1px;
 
 }
+
+/* registration form*/
+
+.regmain{
+    position: relative;
+    top: 30px;
+    width: 100%;
+    left: 25%;
+    border-radius: 35px;
+}
+
+.regform{
+    display: flex;
+    width: 50%;
+    height: auto;
+    background-color: cyan;
+    font-weight: bolder;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 25px;
+    border-radius: 35px;
+}
+
+.regform input{
+    margin: 10px;
+    padding: 5px;
+    width: 40%;
+    height: 25px;
+    border-radius: 35px;
+    border: green solid 1px;
+}
+.regform input:focus{
+    outline: none;
+    border-radius: 35px;
+}
+
+label{
+    margin: 10px;
+    color: green;
+    font-weight: bolder;
+}
+
+.regform button{
+    margin: 10px;
+    padding: 5px;
+    width: 20%;
+    height: 25px;
+    border-radius: 35px;
+    border: green solid 1px;
+    font-weight: bolder;
+    color: green;
+}
+.regform button:focus{
+    outline: none;
+    border: none;
+}
+
+
 
 
 
