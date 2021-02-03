@@ -41,7 +41,7 @@ body{
 
     width: 300px;
     height: 130px;
-    background:url("img/logo.jpg");
+    background:url("img/logo_zoom.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 25px;
@@ -296,27 +296,31 @@ body{
     margin: 5px;
     border-radius: 35px;
 }
+
 .shortcuts{
     display: flex;
     width: 100%;
     height: 500px;
     padding: 5px;
+    font-weight: lighter;
+    color: whitesmoke;
     /*grid-template-columns: auto auto auto auto;*/
 }
 
 .shortcuts a{
-    color: darkslategray;
+    color: whitesmoke;
     text-decoration: none;
 }
 
 .shortcuts > div {
     display: flex;
     width: 25%;
-    background-color: lightskyblue;
+    /*background-color: lightskyblue;*/
     margin: 5px;
     border-radius: 35px;
     padding: 10px;
-    font-weight: lighter;
+    color: whitesmoke;
+
 
     flex-direction: column;
 }
@@ -324,8 +328,8 @@ body{
 .shortcuts > div > span{
     align-items: flex-start;
     justify-content: left;
-    font-weight: lighter;
     text-align: justify;
+    color: whitesmoke;
 
 
 }
@@ -333,10 +337,12 @@ body{
 
     letter-spacing: 3px;
     line-height: 45px;
+
 }
 
 .shortcuts > div > span > h3{
     padding-top: 20px;
+    color: whitesmoke;
 }
 .contactus{
     flex-direction: column;
@@ -501,6 +507,12 @@ label{
     width: 100%;
     height: 30px;
     background-color: indigo;
+}
+.sm2{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: cyan;
 }
 
 marquee{
