@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="style.css">
+    <title>ZOOMTRADE</title>
+</head>
+<body>
+<div id="api" class="priceactions">
+    <marquee id="display" behavior="scroll" >
+
+    </marquee>
+</div>
+<div class="pagetop">
+    <a href="home.html"> <div class="logo"></div> </a>
+    <div class="navbar">
+        <a onclick="dbf()" style="cursor: pointer;"> DASHBOARD</a>
+        <a onclick="plff()" style="cursor: pointer;"> PROFILE</a>
+        <a onclick="actf()" style="cursor: pointer;"> ACCOUNT</a>
+        <a href="home.html" onclick=""> SIGN OUT</a>
+    </div>
+
+    <div class="translator">
+
+    </div>
+
+
+</div>
+
+<div class="sm1">
+
+</div>
+
+<div class="userside" id="userside">
+
+<div >
+
+    <div class="db" id="db"><button>db</button></div>
+    <div class="plf" id="plf">
+        <div class="user_flex">
+
+        <form id="profile_form" class="profile_form">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="text" class="input-field" placeholder="Firstname" required>
+            <input type="text" class="input-field" placeholder="Lastname" required>
+
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Home Address" required>
+            <input type="text" class="input-field" placeholder="Phone Number" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="button" class="submit-btn">Update</button>
+
+        </form>
+        </div>
+    </div>
+    <div class="act" id="act">
+
+        <div class="user_flex">
+            <div id="profile_form" class="profile_form act_btn">
+                <label>Account Type :</label>
+
+                <div class="check_box">
+
+                <input type="radio" name="plan" class="check-box"><span>Economy Plan</span>
+                <input type="radio" name="plan" class="check-box"><span>High Frequency Plan</span>
+                <input type="radio" name="plan" class="check-box"><span>Contract Plan</span>
+                <input type="radio" name="plan" class="check-box"><span>Leverage Plan</span>
+                </div>
+
+
+                <input type="text" class="input-field" placeholder="Wallet Address" required>
+                <button>Update Wallet Address</button>
+                <div>
+                    <button> Freeze Account</button>
+                    <button>Deactivate Account</button>
+                    <button>RIO Calculator</button>
+
+
+                </div>
+
+                <button type="button" class="submit-btn">Update</button>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+<div>
+    <div class="ctu" id="ctu">
+        <div id="profile_pic">my pic is not ugly bro</div>
+
+        <div id="user_details">
+            <label>Name :</label>
+            <span id="u_name">Martins Onyia </span>
+            <br>
+
+            <label>Account Type : </label>
+            <span id="acc_type">Leverage Account</span>
+
+            <br>
+            <label>Account Balance : </label>
+            <span id="acc_bal">$40000 </span>
+
+            <br>
+            <button>Withdraw</button>
+            <button>Deposit</button>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+
+</body>
+<script>
+
+
+   function dbf() {
+       let x = document.getElementById('db');
+       let y = document.getElementById('plf');
+       let z = document.getElementById('act');
+       let a= 3;
+       if (a<4){
+
+           x.style.backgroundColor='lightcyan';
+           x.style.zIndex='1';
+           y.style.zIndex='-2';
+           z.style.zIndex='-3';
+       }
+       else{
+          alert(a);
+       }
+   };
+
+   function plff() {
+       let x = document.getElementById('db');
+       let y = document.getElementById('plf');
+       let z = document.getElementById('act');
+       let b= 3;
+       if (b<4){
+
+           y.style.backgroundColor='lightcyan';
+           x.style.zIndex='-2';
+           y.style.zIndex='1';
+           z.style.zIndex='-3';
+       }
+       else{
+          alert(b);
+       }
+   };
+   function actf() {
+
+       let x = document.getElementById('db');
+       let y = document.getElementById('plf');
+       let z = document.getElementById('act');
+       let c= 3;
+       if (c<4){
+
+          z.style.backgroundColor='lightcyan';
+           x.style.zIndex='-3';
+           y.style.zIndex='-2';
+           z.style.zIndex='1';
+       }
+       else{
+         alert(c);
+       }
+   };
+
+
+</script>
+</html>

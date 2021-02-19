@@ -15,11 +15,11 @@
     </marquee>
 </div>
 <div class="pagetop">
-    <div class="logo"></div>
+   <a href="home.html"> <div class="logo"></div> </a>
     <div class="navbar">
         <a href="home.html"> HOME</a>
         <a href="#ABOUT"> ABOUT US</a>
-        <a href="#ACCOUNT"> ACCOUNT</a>
+        <a href="user.html"> ACCOUNT</a>
         <a href="https://login.blockchain.com/#/signup"> CREATE WALLET</a>
         <a href="form.html"> LOGIN</a>
         <a href="#CONTACTUS"> CONTACT US</a>
@@ -47,9 +47,11 @@
     </div>
 
     <div>
+        <a href="form.html">
         <button class="OPENACCOUNT">
             <h3> OPEN AN ACCOUNT</h3>
         </button>
+        </a>
         </div>
 
 </div>
@@ -148,7 +150,7 @@
     <div class="packages">
         <div>
           <h2>  Economy Plan </h2>
-            <h3>$100</h3>
+            <h3>$1000</h3>
 
            <p> 0.5-1.14% Daily ROI </p>
             <br>
@@ -247,7 +249,7 @@
             <h3><a href="form.html"> LOGIN</a></h3>
             <h3><a href="#contact"> CONTACT US</a></h3>
             <h3><a href="#pack"> PACKAGES</a></h3>
-            <h3><a href="reg.html"> INVEST NOW</a></h3>
+            <h3><a href="form.html"> INVEST NOW</a></h3>
         </span>
     </div>
     <div class="riskdisco">
@@ -274,10 +276,29 @@
 
     </div>
 </div>
-<div class="sm2">things</div>
-<footer class="footer"></footer>
+
+<footer class="footer">
+    <div class="copyrights">
+        Copyrights
+    </div>
+    <div id="year">
+
+    </div>
+    <div class="social-icons2">
+        <img src="../img/fb.png">
+        <img src="../img/gg.png">
+        <img src="../img/tw.png">
+    </div>
+</footer>
 
 <script>
+/////////////////////////////////////////////////////////////////
+    let footerdate= new Date();
+    let footeryear = footerdate.getFullYear()
+    document.getElementById('year').innerHTML=footeryear
+/////////////////////////////////////////////////////////////
+
+
     // var apikey = {
     //     key:'3f872790-c642-418c-9b50-4e0b7e68cdb6'
     //     }

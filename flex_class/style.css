@@ -348,157 +348,113 @@ body{
     flex-direction: column;
 }
 
-.formdiv{
-    display: flex;
+
+
+
+
+.userauthen{
+
     width: 100%;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-}
-.left{
-    display: flex;
-    width: 40%;
-    height: 400px;
-    background-color: greenyellow;
-    margin: 10px;
-    border-radius: 35px;
-}
-.right {
-    display: flex;
-    width: 60%;
-    height: 300px;
-    background-color: cyan;
-    justify-content: center;
-    align-items: center;
-    border-radius: 35px;
-}
-
-/*login form*/
-
-.formcent{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-.formclass{
-    display: flex;
-    width: 50%;
-    height: 90%;
-    padding: 1%;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: bold;
-    margin-left: 1%;
-    margin-right: 1%;
-    /*background-color: antiquewhite;*/
-}
 
 
 
-.formclass a {
-    color: whitesmoke;
-}
-
-
-
-.formclass label {
-    font-weight: bolder;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-
-.formclass input{
-
-    margin: 10px;
-    padding: 5px;
-    width: 40%;
-    height: 15px;
-    border-radius: 35px;
-    border: black solid 1px;
-    align-items: center;
-
-   /* margin-top: 10px;
-    width: 200px;
-    float: right;
-    border-radius: 35px;
-    width: 200px;
-    height: 30px;
-    float: right;*/
 
 }
 
-
-.formclass button{
-    float: right;
-    width: 70px;
-    height: 20px;
-    border-radius: 17px;
-    border: black solid 1px;
-
-}
-
-/* registration form*/
-
-.regmain{
+.form-box{
+    width: 380px;
+    height: 480px;
     position: relative;
-    top: 30px;
+    margin: 6% auto;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    box-shadow: 0 0 20px 9px cyan;
+    position: relative;
+    border-radius: 30px;
+}
+.toogle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, darkslategray,cornflowerblue,cadetblue);
+    border-radius: 30px;
+    transition: .5s ease-in-out;
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+
+}
+.social-icons > img{
+   width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px cadetblue;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s ease-in-out;
+}
+.input-field{
     width: 100%;
-    left: 25%;
-    border-radius: 35px;
-}
-
-.regform{
-    display: flex;
-    width: 50%;
-    height: auto;
-    background-color: cyan;
-    font-weight: bolder;
-    justify-content:flex-start;
-    align-items:flex-start;
-    flex-direction: column;
-    padding-left: 15px;
-    padding-top: 25px;
-    border-radius: 35px;
-}
-
-.regform input{
-    margin: 10px;
-    padding: 5px;
-    width: 40%;
-    height: 25px;
-    border-radius: 35px;
-    border: green solid 1px;
-}
-.regform input:focus{
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px cyan solid;
     outline: none;
-    border-radius: 35px;
+    background: transparent;
 }
 
-label{
-    margin: 10px;
-    color: green;
-    font-weight: bolder;
-}
-
-.regform button{
-    margin: 10px;
-    padding: 5px;
-    width: 20%;
-    height: 25px;
-    border-radius: 35px;
-    border: green solid 1px;
-    font-weight: bolder;
-    color: green;
-}
-.regform button:focus{
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, darkslategray,cornflowerblue,cadetblue);
+    border: 0;
     outline: none;
-    border: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+.input-group > span{
+    color: darkslategray;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
 }
 
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+    display: none;
+}
 
 
 
@@ -507,13 +463,32 @@ label{
     width: 100%;
     height: 30px;
     background-color: indigo;
-}
-.sm2{
     display: flex;
-    width: 100%;
-    height: 50px;
-    background-color: cyan;
+    flex-direction: row;
+    align-items: center;
+
 }
+.social-icons2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 70%;
+
+}
+.social-icons2 >img{
+    margin-left: 55px;
+}
+
+.copyrights{
+    margin-left: 20px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+#year{
+    margin-left: 5px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
 
 marquee{
     display: flex;
@@ -540,6 +515,112 @@ marquee{
     font-family: "Segoe UI", sans-serif;
     color: #f5f5f5;
 }
+
+
+.userside{
+    position: relative;
+    top: 45px;
+    width: 99.8%;
+    height: 540px;
+    border:1px whitesmoke solid;
+}
+.db{
+    position: absolute;
+    width: 80%;
+    background: lightcyan;
+    height: 100%;
+    opacity: 1;
+   transition: .9s ease-in-out;
+    display: block;
+    right: 0;
+
+
+
+
+}
+.plf{
+    position: absolute;
+    width: 80%;
+    background: lightcyan;
+    height: 100%;
+    opacity: 1;
+    transition: .9s ease-in-out;
+    display: block;
+    right: 0;
+}
+.user_flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.profile_form{
+    width: 80%;
+    font-weight: bolder;
+}
+.act{
+    position: absolute;
+    width: 80%;
+    background: lightcyan;
+    height: 100%;
+    transition: .9s ease-in-out;
+    opacity: 1;
+    display: block;
+    right: 0;
+}
+
+.act_btn button{
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+.ctu{
+    width: 19.8%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile_pic{
+    width: 100%;
+    height: 200px;
+    background: lightcyan;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#user_details{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+
+}
+#user_details > button{
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    margin: 15px 0px;
+}
+#user_details > span{
+    margin: 5px 0px;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
 
 @media only screen and (max-width:900px) {
     *{

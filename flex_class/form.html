@@ -15,13 +15,13 @@
     </marquee>
 </div>
 <div class="pagetop">
-    <div class="logo"></div>
+    <a href="home.html"> <div class="logo"></div> </a>
     <div class="navbar">
         <a href="home.html"> HOME</a>
         <a href="#ABOUT"> ABOUT US</a>
         <a href="#ACCOUNT"> ACCOUNT</a>
         <a href="https://login.blockchain.com/#/signup"> CREATE WALLET</a>
-        <a href="login.html"> LOGIN</a>
+        <a href="form.html"> LOGIN</a>
         <a href="#CONTACTUS"> CONTACT US</a>
     </div>
 
@@ -32,41 +32,101 @@
 
 </div>
 
-<div class="sm2">
+<div class="sm2"></div>
 
-</div>
+    <div class="userauthen">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toogle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toogle-btn" onclick="regista()">Register</button>
 
-<div class="us">
-    <div class="formdiv">
-        <div class="left"></div>
-        <div class="right">
-            <div class="formcent">
-            <form class="formclass" >
-                    <div>
-                <label>Username   : * </label>
-                <input type="text" name="username" required="true">
-                    </div>
+            </div>
+            <div class="social-icons">
+              <h1>ZOOM TRADE</h1>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="button" class="submit-btn">Log In</button>
 
-                <div>
-                <label>Password   : * </label>
-                <input type="password" name="pword" required="true">
+            </form>
 
-                    </div>
-                <div>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Firstname" required>
+                <input type="text" class="input-field" placeholder="Lastname" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="button" class="submit-btn">Register</button>
 
-                <label>Private key : *</label>
-                <input type="password" name="pkey" required="true">
+            </form>
 
-                    </div>
-                        <div>
-               <button>Login</button>
-                        </div>
 
-                    Do you have an account ? <a href="reg.html">Register</a>
-
-        </form>
+        </div>
 
     </div>
 
-</body>
+    <footer class="footer">
+        <div class="copyrights">
+            Copyrights
+        </div>
+        <div id="year">
+
+        </div>
+        <div class="social-icons2">
+            <img src="../img/fb.png">
+            <img src="../img/gg.png">
+            <img src="../img/tw.png">
+        </div>
+    </footer>
+
+
+ </body>
+<script>
+    function login() {
+
+        let reg= document.getElementById('register');
+        let log= document.getElementById('login');
+        let btn= document.getElementById('btn');
+        if (log.style.display='none'){
+            btn.style.left='0px'
+            log.style.left='50px'
+            reg.style.display='none'
+            log.style.left='50px'
+            log.style.display='block'
+        }
+        else {
+            btn.style.left='0px'
+            log.style.left='50px'
+            reg.style.display='none'
+            log.style.left='50px'
+            log.style.display='block'
+
+        }
+
+
+    }
+    function regista() {
+        let reg= document.getElementById('register');
+        let log= document.getElementById('login');
+        let btn= document.getElementById('btn');
+        if (reg.style.display='none'){
+            btn.style.left='110px'
+            reg.style.left='50px'
+            reg.style.display='block'
+            log.style.left='450px'
+            log.style.display='none'
+        }
+        else {
+            reg.style.left='50px'
+            reg.style.display='block'
+            log.style.left='450px'
+            log.style.display='none'
+
+        }
+
+    }
+</script>
 </html>
